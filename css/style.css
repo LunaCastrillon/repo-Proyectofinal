@@ -1,7 +1,42 @@
-.card-border {
-  border: solid 10px #272626;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all ease-out 0.2s; }
-  .card-border :hover {
-    transform: scale(1.05); }
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0%;
+  margin: 0%; }
+
+.contenedor {
+  display: flex;
+  text-align: center;
+  margin-top: 3%; }
+  .contenedor .principal {
+    width: 278px;
+    height: 1883px;
+    margin-left: 1rem;
+    color: #333333;
+    padding: 2%; }
+  .contenedor .resultados {
+    color: #888787bb;
+    font-size: 15px; }
+  .contenedor .contenido {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 26%); }
+  .contenedor .tarjeta {
+    width: 284px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 3%;
+    border: solid 1px #b8b6b67e; }
+  .contenedor .tarjeta-cuerpo {
+    background-color: #ffffff;
+    text-align: start;
+    border-top: solid 1px #b8b6b67e;
+    padding: 5%;
+    margin: 1rem; }
+  .contenedor .precio {
+    padding: 1rem;
+    font-size: 24px; }
+  .contenedor .descuento {
+    color: #00a650;
+    font-size: 14px;
+    text-align: right; }
