@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    
+}
+ 
+
+
+
+.seccion{
+    @include size (100%, auto, 0);
+    text-align: start; 
+    padding: 2rem;
+   
+
+    .ropa{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+
+   
+.tarjeta2{
+    
+    width: 284px;
+    height: auto;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 3%;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.precios{
+    border-top: $border;
+    padding: 2rem;
+    font-size: 24px;
+    text-align: start;
+}
+.descuentos{
+    color: #00a650;
+    font-size: 14px;
+    text-align: right;
+}
+
+.descripcion{
+    font-size: 14px;
+    color: #333333;
+}
+
+.tarjeta2:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(0%);
+}
+
+.titulo{
+    @include size (100%, auto, 0);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width:768px){
+
+   .ropa{
+    grid-template-columns: repeat(1, 1fr);
+   }
+  
+}
+
+@media (min-width:600px){
+    .ropa{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1024px){
+    
+    .ropa{
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10%;
+    }
+}
+
+@media (min-width:1700px){
+    
+    .ropa{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+}

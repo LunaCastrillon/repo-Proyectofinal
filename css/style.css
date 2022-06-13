@@ -1,21 +1,58 @@
+.contenedor-juegos {
+  padding: 3%; }
+  .contenedor-juegos .jueguetes {
+    padding-left: 3%;
+    padding: 5%; }
+  .contenedor-juegos .card-juegos {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 0.5%;
+    border-bottom: solid 2px #b8b6b67e; }
+  .contenedor-juegos .imagen {
+    padding: 3%; }
+  .contenedor-juegos .description {
+    padding: 2%;
+    text-align: left;
+    color: #333333; }
+  .contenedor-juegos .juego-d {
+    font-size: 24px; }
+  .contenedor-juegos .marca {
+    font-size: 12px;
+    color: #666666;
+    line-height: 12px; }
+  .contenedor-juegos .marca2 {
+    font-size: 14px; }
+  @media (max-width: 768px) {
+    .contenedor-juegos .jueguetes {
+      padding-left: 0%; }
+    .contenedor-juegos .card-juegos {
+      display: grid;
+      height: auto; } }
+  @media (min-width: 338px) {
+    .contenedor-juegos .juego-d {
+      width: 300px; } }
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0%;
   margin: 0%; }
 
-.seccion {
+.seccion, .contenedor-juegos {
   width: 100%;
+  height: auto;
+  margin: 0;
   text-align: start;
-  padding-left: 22rem;
-  padding-top: 2rem; }
-  .seccion .ropa {
+  padding: 2rem; }
+  .seccion .ropa, .contenedor-juegos .ropa {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 4; }
-  .seccion .tarjeta2 {
+    grid-template-rows: repeat(3, 1fr); }
+  .seccion .tarjeta2, .contenedor-juegos .tarjeta2 {
     width: 284px;
-    height: 500px;
+    height: auto;
     background-color: #ffffff;
     text-align: center;
     margin-top: 3rem;
@@ -24,23 +61,37 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease; }
-  .seccion .precios {
+  .seccion .precios, .contenedor-juegos .precios {
     border-top: solid 2px #b8b6b67e;
     padding: 2rem;
     font-size: 24px;
     text-align: start; }
-  .seccion .descuentos {
+  .seccion .descuentos, .contenedor-juegos .descuentos {
     color: #00a650;
     font-size: 14px;
     text-align: right; }
-  .seccion .descripcion {
+  .seccion .descripcion, .contenedor-juegos .descripcion {
     font-size: 14px;
     color: #333333; }
-  .seccion .tarjeta2:hover {
+  .seccion .tarjeta2:hover, .contenedor-juegos .tarjeta2:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%); }
-  .seccion .titulo {
+    transform: translateY(0%); }
+  .seccion .titulo, .contenedor-juegos .titulo {
     width: 100%;
-    background-color: #00a650;
+    height: auto;
+    margin: 0;
     margin-top: 3rem;
     margin-bottom: 3rem; }
+  @media (max-width: 768px) {
+    .seccion .ropa, .contenedor-juegos .ropa {
+      grid-template-columns: repeat(1, 1fr); } }
+  @media (min-width: 600px) {
+    .seccion .ropa, .contenedor-juegos .ropa {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) {
+    .seccion .ropa, .contenedor-juegos .ropa {
+      grid-template-columns: repeat(3, 1fr);
+      padding-left: 10%; } }
+  @media (min-width: 1700px) {
+    .seccion .ropa, .contenedor-juegos .ropa {
+      grid-template-columns: repeat(4, 1fr); } }

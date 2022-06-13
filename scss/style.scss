@@ -1,67 +1,19 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0%;
-    margin: 0%;
-    
-}
- 
-
-.seccion{
-    width: 100%;
-    text-align: start;
-    padding-left: 22rem;
-    padding-top: 2rem;
-   
-
-    .ropa{
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: (4);
-    }
- 
-   
-.tarjeta2{
-    
-    width: 284px;
-    height: 500px;
-    background-color: #ffffff;
-    text-align: center;
-    margin-top: 3rem;
-    border-radius: 3%;
-    overflow: hidden;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
-}
-.precios{
-    border-top: solid 2px #b8b6b67e;
-    padding: 2rem;
-    font-size: 24px;
-    text-align: start;
-}
-.descuentos{
-    color: #00a650;
-    font-size: 14px;
-    text-align: right;
+// mixins:
+@mixin size ($ancho, $alto, $espaciado) {
+    width: $ancho;
+    height: $alto;
+    margin: $espaciado;
 }
 
-.descripcion{
-    font-size: 14px;
-    color: #333333;
-}
+// operaciones:
+$spacing: 1%;
 
-.tarjeta2:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-}
+// variables:
+$color-marca:#666666; 
+$border: solid 2px #b8b6b67e;
 
-.titulo{
-    width: 100%;
-    background-color: #00a650;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
+// imports:
+@import "juegos";
+@import "moda-m";
 
-}
 
